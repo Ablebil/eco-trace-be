@@ -14,6 +14,7 @@ type User struct {
 	Name         string         `gorm:"column:name;type:varchar(255);not null"`
 	GoogleID     *string        `gorm:"column:google_id;type:varchar(255);unique"`
 	Verified     bool           `gorm:"column:verified;type:bool;default:false"`
+	Exp int `gorm:"column:exp;type:int;default:0"`
 	RefreshToken []RefreshToken `gorm:"foreignKey:user_id;constraint:OnUpdate:SET NULL,OnDelete:CASCADE;"`
 	CreatedAt    *time.Time     `gorm:"column:created_at;type:timestamp;autoCreateTime"`
 	UpdatedAt    *time.Time     `gorm:"column:updated_at;type:timestamp;autoUpdateTime"`

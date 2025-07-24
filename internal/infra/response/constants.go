@@ -28,6 +28,28 @@ const (
 	LogoutSuccess       = "Logout successful"
 )
 
+// challenge Domain
+const (
+	ChallengeNotFound         = "Challenge not found"
+	ChallengeAlreadyTaken     = "Challenge already taken"
+	ChallengeNotTaken         = "Challenge not taken by user"
+	ChallengeAlreadyCompleted = "Challenge already completed"
+	ChallengeNotActive        = "Challenge is not active"
+
+	FailedGetChallenges     = "Failed to get challenges"
+	FailedGetUserChallenges = "Failed to get user challenges"
+	FailedTakeChallenge     = "Failed to take challenge"
+	FailedCompleteChallenge = "Failed to complete challenge"
+	FailedUpdateUserExp     = "Failed to update user experience"
+	FailedGetBadges         = "Failed to get badges"
+	FailedGetUserBadges     = "Failed to get user badges"
+	FailedUnlockBadge       = "Failed to unlock badge"
+
+	TakeChallengeSuccess     = "Challenge taken successfully"
+	CompleteChallengeSuccess = "Challenge completed successfully"
+	BadgeUnlockedSuccess     = "New badge unlocked!"
+)
+
 // Others
 const (
 	FailedHashPassword         = "Failed to hash password"
@@ -46,7 +68,10 @@ const (
 
 // Handler
 const (
-	FailedParsingRequestBody   = "Failed parsing request body"
-	FailedParsingRequestParams = "Failed parsing request params"
-	FailedValidateRequest      = "Failed to validate request"
+	FailedParsingRequestBody    = "Failed parsing request body"
+	FailedParsingRequestParams  = "Failed parsing request params"
+	FailedValidateRequest       = "Failed to validate request"
+	MissingAccessToken          = "Missing access token"
+	InvalidAccessToken          = "Invalid access token"
+	InvalidOrMissingBearerToken = "Invalid or missing bearer token"
 )
